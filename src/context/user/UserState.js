@@ -15,31 +15,35 @@ const UserState = (props) => {
     const [state, dispatch] = useReducer(UserReducer, initialState);
     //
     const getUsers = async (state) => {
-       try{
-        const users = await axios.get(`${url}/api/users`);
-        console.log('Users:', users);
-        return users
-       }
-       catch (e) {
-        console.log('error:', e);
-        return []
-       }
+        try {
+            const users = await axios.get(`${url}/api/users`);
+            dispatch({
+                type: 'GET_USERS',
+                payload: users.data.data
+            })
+        }
+        catch (e) {
+            console.log('error:', e);
+        }
     };
+
     //
     const getProfile = async (id) => {
-        try{
+        try {
             const user = await axios.get(`${url}/api/users/${id}`);
-            return user
-           }
-           catch (e) {
+            dispatch({
+                type: 'GET_PROFILE',
+                payload: user.data.data
+            })
+        }
+        catch (e) {
             console.log('error:', e);
-            return {}
-           }
+        }
     };
     //
     return (
         <UserContext.Provider value={{
-            state: state.users,
+            users: state.users,
             selectedUser: state.selectedUser,
             getUsers,
             getProfile
