@@ -14,7 +14,7 @@ function App() {
     <>
       <Header title="ReactApp" />
       <UserState>
-        <div className="container mt-3">
+        <div className="container mt-1">
           <div className="row">
             <div className="col-md-7">
               <UserList />

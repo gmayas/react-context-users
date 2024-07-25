@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //css
 import 'bootswatch/dist/slate/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import { ThemeProvider } from './context/theme/ThemeContext';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

@@ -1,0 +1,12 @@
+
+.bg-item-light {
+    background-color: #52575c;
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+ 
+.bg-item-dark {
+    background-color: #3e444c;
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+
+  

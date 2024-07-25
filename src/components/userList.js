@@ -1,9 +1,11 @@
 import React, { useEffect, useContext } from "react";
 import UserContext from "../context/user/UserContext";
+import ThemeContext from "../context/theme/ThemeContext";
 //
 const UserList = () => {
     //
     const userContext = useContext(UserContext);
+    const { darkMode } = useContext(ThemeContext);
     //
     useEffect(() => {
         userContext.getUsers();
@@ -17,7 +19,8 @@ const UserList = () => {
                         key={user.id}
                         href="#!"
                         onClick={() => userContext.getProfile(user.id)}
-                        className="list-group-item list-group-item-action active d-flex flex-row justify-content-start"
+                        className= {darkMode ? "mb-1 list-group-item list-group-item-action active d-flex flex-row justify-content-start" 
+                                             : "mb-1 list-group-item list-group-item-action active list-group-item-light d-flex flex-row justify-content-start"}
                     >
                         <img src={user.avatar} alt="" className="img-fluid mr-4 rounded-circle" width="70" />
                         <p>{user.first_name + " " + user.last_name}</p>
