@@ -12,7 +12,7 @@ import UserState from './context/user/UserState';
 function App() {
   return (
     <>
-      <Header title="ReactApp" />
+      <Header title="React App Context" />
       <UserState>
         <div className="container mt-1">
           <div className="row">

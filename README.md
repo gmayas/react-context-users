@@ -1,11 +1,27 @@
 # react-context-users
-Is a app ...
+Este proyecto fue creado con React 18.3.1, al momento de descargar este proyecto, instale las dependencias con npm install, para ejecutar npm run start, la aplicación corre en: http://localhost:3000/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## React App Context
 
+Este proyecto fue creado con la finalidad de entender y practicar el uso del Context en aplicaciones creadas en React. 
 
-In the process of development ...
+🙂 Si desea ver la aplicación en producción, de click en el siguiente vínculo: 
+   https://reactcontextusers.web.app/
 
+🙂 Al iniciar vera un lista de usuarios y el tema Light:
+
+![](/images/01.png)
+
+🙂 Puede elegir cualquier elemento de la lista y verá su contenido:
+
+![](/images/02.png)
+
+🙂 Si desea cambiar de tema, solo de click en el botón Toggle theme:
+
+![](/images/03.png)
+
+🙂 Verá que cambió al tema Dark:
+
+![](/images/04.png)
 
 `© 2024 Copyright: GMayaS C:\>Desarrollo en Sistemas.`

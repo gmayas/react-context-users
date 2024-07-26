@@ -24,7 +24,8 @@ const Header = (props) => {
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <button type="button" className={darkMode ? "btn btn-dark my-2 my-sm-0" : "btn btn-light my-2 my-sm-0"}
+                            <button type="button" className={darkMode ? "btn btn-secondary my-2 my-sm-0" : "btn btn-light my-2 my-sm-0"}
+                                data-placement="top" title="Toggle theme"
                                 onClick={() => setDarkMode(prev => !prev)}>
                                 <img className="ml-4" src={darkMode ? moon : sun} alt="icon"></img>
                                 <img src={darkMode ? toggleOn : toggleOff} alt="icon"></img>

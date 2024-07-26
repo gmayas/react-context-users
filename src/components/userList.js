@@ -23,7 +23,7 @@ const UserList = () => {
                                              : "mb-1 list-group-item list-group-item-action active list-group-item-light d-flex flex-row justify-content-start"}
                     >
                         <img src={user.avatar} alt="" className="img-fluid mr-4 rounded-circle" width="70" />
-                        <p>{user.first_name + " " + user.last_name}</p>
+                        <p>{`${user.first_name} ${user.last_name}`}</p>
                     </a>
                 ))
                 : null}
