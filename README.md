@@ -8,7 +8,7 @@ Este proyecto fue creado con la finalidad de entender y practicar el uso del Con
 🙂 Si desea ver la aplicación en producción, de click en el siguiente vínculo: 
    https://reactcontextusers.web.app/
 
-🙂 Al iniciar verá un lista de usuarios y el tema Light:
+🙂 Al iniciar verá una lista de usuarios y el tema Light:
 
 ![](/images/01.png)
 
@@ -16,7 +16,7 @@ Este proyecto fue creado con la finalidad de entender y practicar el uso del Con
 
 ![](/images/02.png)
 
-🙂 Si desea cambiar de tema, solo da click en el botón Toggle theme:
+🙂 Si desea cambiar de tema, solo de click en el botón Toggle theme:
 
 ![](/images/03.png)
 
