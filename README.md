@@ -25,7 +25,9 @@ Este proyecto fue creado con la finalidad de entender y practicar el uso del Con
 ![](/images/04.png)
 
 🙂 Esta App fue creada con componentes Bootstrap y estilos de Bootswatch Slate.
+
 🙂 Bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
 🙂 Bootswatch Slate: https://bootswatch.com/slate/
 
 `© 2024 Copyright: GMayaS C:\>Desarrollo en Sistemas.`
