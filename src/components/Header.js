@@ -4,12 +4,14 @@ import sun from "../assets/sun.svg";
 import toggleOn from "../assets/toggle-on.svg";
 import toggleOff from "../assets/toggle-off.svg";
 import ThemeContext from "../context/theme/ThemeContext";
-
+//
 const Header = (props) => {
+    //
     const { darkMode, setDarkMode } = useContext(ThemeContext);
+    //
     return (
         <header>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme={darkMode ? "dark" : "light"}>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">{props.title}</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">

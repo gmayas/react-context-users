@@ -1,17 +1,15 @@
 import React, { useContext } from "react";
 import UserContext from "../context/user/UserContext";
 import ThemeContext from "../context/theme/ThemeContext"
-
+//
 const Profile = () => {
+    //
     const { selectedUser } = useContext(UserContext);
-    const { darkMode } = useContext(ThemeContext);
-
+    //
     return (
         <>
             {selectedUser ? (
-                <div className={darkMode ? "card card-body text-center bg-item-dark" 
-                                         : "card card-body text-center bg-item-light"} 
-                >
+                <div className="card-me card-body text-center">
                     <img
                         src={selectedUser.avatar}
                         alt="user selected"

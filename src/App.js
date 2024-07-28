@@ -1,15 +1,21 @@
 import './App.css';
-
 // componenets
 import Profile from './components/profile';
 import UserList from './components/userList';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 // Context
+import React, { useContext } from "react";
 import UserState from './context/user/UserState';
-
+import ThemeContext from "./context/theme/ThemeContext";
 //
-function App() {
+const App = () => {
+  //
+  const { darkMode } = useContext(ThemeContext);
+  let mode = "dark";
+  if (darkMode) { mode = "dark" } else { mode = "light" };
+  document.querySelector("body").setAttribute("data-bs-theme-me", mode)
+  //
   return (
     <>
       <Header title="React App Context" />
